@@ -1,0 +1,16 @@
+theme = "m10c"
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Site'
+
+# Site Params
+[params]
+	author = "Kade Clark"
+	description = "A Website to View My Resume!"
+	
+[[params.social]]
+  icon = "github"
+  name = "My Github"
+  url = "https://github.com/KClark11"
+
+
