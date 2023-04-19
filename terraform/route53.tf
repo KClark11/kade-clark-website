@@ -1,9 +1,9 @@
-resource "aws_route53_zone" "primary" {
-  name = var.domain_name
+data "aws_route53_zone" "selected" {
+ zone_id = "Z03484093JF7J54NY63KQ"
 }
 
 resource "aws_route53_record" "www" {
-  zone_id = aws_route53_zone.primary.zone_id
+  zone_id = data.aws_route53_zone.selected.zone_id
   name = var.domain_name
   type = "A"
   alias {
